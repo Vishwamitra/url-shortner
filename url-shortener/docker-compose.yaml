@@ -1,5 +1,18 @@
 version: "3.8"
 services:
+  # frontend:
+  #   container_name: frontend
+  #   build: 
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #     args:
+  #       REACT_APP_BACKEND_URL: https://api-service:${API_PORT}/
+  #   ports:
+  #     - 80:80
+  #     - 443:443
+  #   depends_on:
+  #     - api-service
+
   db:
     container_name: db
     build: ./db
